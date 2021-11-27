@@ -20,7 +20,7 @@ module.exports = {
   defaultNetwork: "hardhat",
   solidity: "0.8.4",
   paths: {
-    artifacts: ".src/artifacts",
+    artifacts: "src/artifacts",
   },
   networks: {
     hardhat: {
@@ -30,10 +30,10 @@ module.exports = {
     //   url: "https://ropsten.infura.io/v3/projectid",
     //   accounts: [process.env.a2key]
     // },
-    // rinkeby: {
-    //   url: "https://rinkeby.infura.io/v3/projectid",
-    //   accounts: [process.env.a2key]
-    // }
+    rinkeby: {
+      url: "https://rinkeby.infura.io/v3/151f8dbedfdc418a9aee741507347a3f",
+      accounts: [`0x${process.env.ACCOUNT_KEY}`],
+    },
   },
   solidity: "0.8.3",
 };
